@@ -7,17 +7,24 @@ at http://todo-aerogear.rhcloud.com/.
 Prerequisites
 -------------
 
+* aerogear-android
 * Android Maven SDK Deployer
 
 Note that to build this project with Maven, you'll need to use the
 Android Maven SDK Deployer
-(https://github.com/mosabua/maven-android-sdk-deployer) in order to
-install the Google extension APIs into your local Maven repository.
+(https://github.com/mosabua/maven-android-sdk-deployer) and aerogear-android (https://github.com/aerogear/aerogear-android) in order to
+install the Google extension APIs and the aerogear-android into your local Maven repository.
 To do this, just do
 
 ```bash
-$ cd <wherever you installed the android-sdk-deployer>
+$ cd <wherever you cloned the android-sdk-deployer>
 $ mvn install -P 4.1 //or mvn install -P 4.2 if you are using the latest SDK
+```
+
+```bash
+$ cd <wherever you cloned the aerogear-android>
+$ mvn install
+
 ```
 
 from the maven-android-sdk-deployer root directory.
